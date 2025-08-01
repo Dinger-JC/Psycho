@@ -61,20 +61,20 @@ def RotationControl(speed_rotation: float, key):
         if key[key_plus]: # Поворот против часовой стрелки
             globals()[angle_rotation] += speed_rotation
             if axis == 'x':
-                Titles().Title("'S'", colors[9], size_window[0] - 187, 5)
+                Titles().Title("'S'", colors[2], size_window[0] - 187, 5)
             elif axis == 'y':
-                Titles().Title("'D'", colors[9], size_window[0] - 184, 25)
+                Titles().Title("'D'", colors[2], size_window[0] - 184, 25)
             elif axis == 'z':
-                Titles().Title("'Q'", colors[9], size_window[0] - 184, 45)
+                Titles().Title("'Q'", colors[2], size_window[0] - 184, 45)
 
         elif key[key_minus]: # Поворот по часовой стрелки
             globals()[angle_rotation] -= speed_rotation
             if axis == 'x':
-                Titles().Title("'W'", colors[9], size_window[0] - 153, 5)
+                Titles().Title("'W'", colors[2], size_window[0] - 153, 5)
             elif axis == 'y':
-                Titles().Title("'A'", colors[9], size_window[0] - 149, 25)
+                Titles().Title("'A'", colors[2], size_window[0] - 149, 25)
             elif axis == 'z':
-                Titles().Title("'E'", colors[9], size_window[0] - 148, 45)
+                Titles().Title("'E'", colors[2], size_window[0] - 148, 45)
 
 
 
